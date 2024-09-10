@@ -35,8 +35,8 @@ const { counter, squareCounter, decrement } = useCounter();
 
 <template>
   <section>
-    <h3>Counter: {{ counter }}</h3>
     <h3>Square: {{ squareCounter }}</h3>
+    <h3 data-test="square-label">Counter: {{ counter }}</h3>
 
     <div>
       <button @click="counter++" class="p-1 m-4 bg-cyan-300 rounded-sm">+1</button>

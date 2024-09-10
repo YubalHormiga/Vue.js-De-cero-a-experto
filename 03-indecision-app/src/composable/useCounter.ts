@@ -3,7 +3,7 @@ export function useCounter() {
   interface Props {
     value: number;
   }
-  const props = defineProps<Props>();
+  defineProps<Props>();
 
   const counter = ref(5);
   const squareCounter = computed(() => {
